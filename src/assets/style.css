@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  position: relative;
+  font-weight: normal;
+}
+
+.padding-x {
+ padding: 0 10% 0 10%;
+}
+.flex-center {
+  display:flex;
+  align-items: center
+}
+.black-gradient{
+  background: rgb(47,47,54);
+  background: linear-gradient(198deg, rgba(47,47,54,1) 30%, rgba(72,70,87,1) 56%, rgba(78,78,83,1) 66%, rgba(141,137,163,1) 88%);
+}
+.text-gradient{
+  background: linear-gradient(to right, #2980b9, #6dd5fa, #ffffff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
