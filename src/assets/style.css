@@ -11,9 +11,12 @@
   font-weight: normal;
 }
 
-.padding-x {
- padding: 0 10% 0 10%;
+@media only screen and (max-width: 1280px) {
+  .padding-x {
+    padding: 0 2rem ;
+   }
 }
+
 .flex-center {
   display:flex;
   align-items: center

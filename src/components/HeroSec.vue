@@ -1,7 +1,11 @@
-<script setup></script>
+<script setup>
+import GetStarted from "@/components/GetStarted.vue";
+</script>
 <template>
-  <div class="flex border padding-x">
-    <div class="right flex flex-col space-y-3 pt-[5rem]">
+  <div
+    class="flex sm:flex-row flex-col space-x-2 border padding-x sm:items-center justify-between"
+  >
+    <div class="right flex-1 flex flex-col space-y-3 pt-[5rem]">
       <div
         class="discount-button px-1 p-1 rounded text-[10px] space-x-1 flex-center bg-[#1c1b22] w-max"
       >
@@ -12,40 +16,38 @@
           ACCOUNT
         </p>
       </div>
-      <h2 class="font-[500] text-4xl leading-[3rem]">
-        <div class="flex items-center space-x-12 relative">
+      <h2
+        class="font-[500] text-[52px] md:text-[72px] leading-[3rem] md:leading-[4rem]"
+      >
+        <div class="flex items-center relative">
           <div>
             The Next <br />
-            <span class="font-semibold text-4xl text-gradient">Generation</span>
+            <span class="font-semibold text-gradient">Generation</span>
           </div>
 
-          <div
-            class="hover:animate-pulse hover:pointer rounded-full relative bottom-2 w-16 h-16 text-center pt-5 text-blue-300 text-[8px] leading-[10px] hidden sm:block border-2 gradient-border"
-          >
-            <a href="">
-              <span class="flex items-center"
-                >Get
-                <img
-                  src="@/assets/svgs/arrow-up.svg"
-                  alt=""
-                  class="w-5 h5"
-                /> </span
-              ><br />
-              <span>Started</span>
-            </a>
-          </div>
+          <GetStarted />
         </div>
 
         Payment Method
       </h2>
       <div>
-        <p class="text-[11px] w-[17.9rem] mt-5 font-[200]">
+        <p
+          class="font-thin text-dimWhite text-[15px] leading-[16.8px] max-w-[470px] mt-5 font-[200]"
+        >
           Our team of experts uses a methodology to identify the credit cards
           most likely to fit your needs. We examine annual percentage rates,
           annual fees.
         </p>
       </div>
     </div>
+    <!--Right side ends here-->
+    <div class="left md:my-0 my-10 relative">
+      <img
+        src="@/assets/images/robot.png"
+        class="w-[100%] h[100%] lg:max-w-lg"
+      />
+    </div>
+    <!--Left side ends here-->
   </div>
 </template>
 <style scoped>
