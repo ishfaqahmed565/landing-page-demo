@@ -27,8 +27,6 @@ import GetStarted from "@/components/GetStarted.vue";
 
           <GetStarted />
         </div>
-
-        Payment Method
       </h2>
       <div>
         <p class="paragraph-style max-w-[470px] mt-5">
