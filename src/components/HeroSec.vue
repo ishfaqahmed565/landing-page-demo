@@ -9,7 +9,6 @@ import GetStarted from "@/components/GetStarted.vue";
       <div
         class="discount-button px-1 p-1 rounded text-[10px] space-x-1 flex-center bg-[#1c1b22] w-max"
       >
-        <img src="@/assets/svgs/discount.svg" alt="dicount" class="w-4 h-4" />
         <p class="text-gray-300 font-[300]">
           <span class="font-semi text-white">20%</span> DICOUNT FOR
           <span class="font-semi text-white">1 MONTH</span>
