@@ -3,9 +3,9 @@ import GetStarted from "@/components/GetStarted.vue";
 </script>
 <template>
   <div
-    class="flex sm:flex-row flex-col space-x-2 border padding-x sm:items-center justify-between"
+    class="flex sm:flex-row flex-col space-x-2 padding-x sm:items-center justify-between"
   >
-    <div class="right flex-1 flex flex-col space-y-3 pt-[5rem]">
+    <div class="right flex-1 flex flex-col space-y-3 pt-[3rem]">
       <div
         class="discount-button px-1 p-1 rounded text-[10px] space-x-1 flex-center bg-[#1c1b22] w-max"
       >
@@ -31,9 +31,7 @@ import GetStarted from "@/components/GetStarted.vue";
         Payment Method
       </h2>
       <div>
-        <p
-          class="font-thin text-dimWhite text-[15px] leading-[16.8px] max-w-[470px] mt-5 font-[200]"
-        >
+        <p class="paragraph-style max-w-[470px] mt-5">
           Our team of experts uses a methodology to identify the credit cards
           most likely to fit your needs. We examine annual percentage rates,
           annual fees.
@@ -50,10 +48,4 @@ import GetStarted from "@/components/GetStarted.vue";
     <!--Left side ends here-->
   </div>
 </template>
-<style scoped>
-.gradient-border {
-  border-image: linear-gradient(to right, #2980b9, #6dd5fa, #ffffff) border-box;
-  border: 1px solid;
-  border-radius: 50px;
-}
-</style>
+<style scoped></style>

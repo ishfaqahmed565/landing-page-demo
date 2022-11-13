@@ -19,4 +19,18 @@
     </a>
   </div>
 </template>
-<style scoped></style>
+<style scoped>
+.gradient-border {
+  border-image: linear-gradient(
+    157.81deg,
+    #def9fa -43.27%,
+    #bef3f5 -21.24%,
+    #9dedf0 12.19%,
+    #7de7eb 29.82%,
+    #5ce1e6 51.94%,
+    #33bbcf 90.29%
+  );
+  border: 1px solid;
+  border-radius: 50px;
+}
+</style>
