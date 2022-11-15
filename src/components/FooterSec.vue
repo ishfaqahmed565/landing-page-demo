@@ -3,7 +3,7 @@
   <footer
     class="flex flex-col = px-[2rem] py-[5rem] bg-[#0B0A0C] w-full space-y-20 mt-36"
   >
-    <div class="flex md:flex-row flex-col">
+    <div class="flex md:flex-row flex-col space-y-10 md:space-y-0">
       <div
         class="flex flex-col items-center md:items-start justify-between md:w-3/6 space-y-10"
       >
