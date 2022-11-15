@@ -2,7 +2,7 @@
 let props = defineProps({
   data: String,
 });
-console.log(props.data, "value");
+
 let style = `flex ${props.data}  space-y-10 md:space-y-0 md:space-x-20 justify-between  mt-10 padding-x items-center`;
 </script>
 <template>

@@ -14,18 +14,20 @@ import {
 </script>
 
 <template>
-  <div class="xl:max-w-7xl w-full text-white mx-auto">
+  <div class="w-full text-white">
     <NavbarSec />
-    <HeroSec />
-    <StatsSec />
-    <BusinessCard />
-    <InvoiceCard />
-    <SwapCard />
-    <TestimonialSec />
-    <ClientsSec />
-    <CTASec />
+    <div class="main xl:max-w-7xl flex flex-col mx-auto space-y-36">
+      <HeroSec />
+      <StatsSec />
+      <BusinessCard />
+      <InvoiceCard />
+      <SwapCard />
+      <TestimonialSec />
+      <ClientsSec />
+      <CTASec />
+    </div>
+    <FooterSec />
   </div>
-  <FooterSec />
 </template>
 
 <style scoped></style>

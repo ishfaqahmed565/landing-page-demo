@@ -1,27 +1,44 @@
 <script setup>
-import { ref } from "vue";
 let showClose = ref(false);
+import { onMounted, ref } from "vue";
+let scrolled = ref(0);
+let sticky = ref(false);
+onMounted(() => {
+  function scrolledAmn() {
+    scrolled.value = window.pageYOffset;
+    if (scrolled.value > 0) {
+      sticky.value = true;
+    } else if (scrolled.value == 0) {
+      sticky.value = false;
+    }
+    console.log(sticky.value);
+  }
+  window.addEventListener("scroll", scrolledAmn);
+});
 </script>
 <template>
-  <div class="padding-x flex items-center justify-between">
+  <div
+    class="px-[2rem] flex items-center justify-between"
+    :class="{ sticky: sticky }"
+  >
     <img
       src="@/assets/svgs/logo.svg"
       alt="logo"
       class="w-[10rem] h-[5rem] object-contain"
     />
     <nav class="hidden sm:block">
-      <ul class="flex space-x-3 text-[12px]">
+      <ul class="flex space-x-3 text-[15px]">
         <li>
-          <a href="#" class="font-thin hover:text-blue-400">Home</a>
+          <a href="#" class="font-normal hover:text-blue-400">Home</a>
         </li>
         <li>
-          <a href="#" class="font-thin hover:text-blue-400">About</a>
+          <a href="#" class="font-normal hover:text-blue-400">About</a>
         </li>
         <li>
-          <a href="#" class="font-thin hover:text-blue-400">Features</a>
+          <a href="#" class="font-normal hover:text-blue-400">Features</a>
         </li>
         <li>
-          <a href="#" class="font-thin hover:text-blue-400">Solution</a>
+          <a href="#" class="font-normal hover:text-blue-400">Solution</a>
         </li>
       </ul>
     </nav>
@@ -91,5 +108,13 @@ let showClose = ref(false);
     opacity: 1;
     top: 2.5rem;
   }
+}
+.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background: #0b0a0c;
+  z-index: 100;
+  border-bottom: 0.1px solid rgb(134, 109, 109);
 }
 </style>
