@@ -1,7 +1,7 @@
 <script setup></script>
 <template>
   <footer
-    class="flex flex-col = px-[2rem] py-[5rem] bg-[#0B0A0C] w-full space-y-20 mt-36"
+    class="flex flex-col = px-[2rem] py-[5rem] bg-[#0B0A0C] w-full space-y-10 mt-36"
   >
     <div class="flex md:flex-row flex-col space-y-10 md:space-y-0">
       <div
@@ -73,9 +73,7 @@
       </div>
     </div>
     <hr />
-    <div
-      class="flex justify-between items-center flex-col sm:flex-row sm:space-y-0 space-y-5"
-    >
+    <div class="flex justify-between items-center flex-col sm:flex-row">
       <p class="text-[11px] font-thin">
         Copyright © 2021 HooBank. All Rights Reserved.
       </p>

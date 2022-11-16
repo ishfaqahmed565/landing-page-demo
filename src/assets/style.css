@@ -20,7 +20,7 @@
    }
 }
 .paragraph-style{
-  font-weight: 100; color:white; font-size: 15px ; line-height: 1.6;
+  font-weight: 200; color:white; font-size: 15px ; line-height: 1.6;
   max-width:350px;
 
 }
@@ -29,7 +29,7 @@
   align-items: center
 }
 .selector:hover {
-	background-color: blue;
+	background-color: blue; 
 }
 
 .black-gradient:hover{
